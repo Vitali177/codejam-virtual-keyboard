@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 80%;
+    height: 150px;
+    margin: 50px 0 0 10%;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    margin: 50px 0 0 10%;
+}
+
+.keyboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 1100px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: calc((100% - 1100px) / 2.0 );
+}
+
+button {
+    border: 0;
+}
+
+.key {
+    height: 18%;
+    width: 6%;
+    background-color: aqua;
+    font-size: 20px;
+}
+
+.key_pressed_down {
+    background-color: #3ADF00;
+}
+
+.key_pressed_up {
+    transform: scale(1.1);
+    background-color: dodgerblue;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    
+}
+
+.key_level_4 {
+    width: 40%;
+}
+
+.key_level_3 {
+    width: 14.5%;
+}
+
+.key_level_2 {
+    width: 15%;
+}
+
+.key_level_1_5 {
+    width: 12.5%;
+}
+
+.key_level_1 {
+    width: 10%;
+}
+
+.key_level_0_5 {
+    width: 8%;
+}
+
+/*
+level 3, width: 14.5% index: 13
+level 2, width: 15% index: 29 42
+        index 41 - 12.5%
+level 1, width: 10% index: 56 61
+level 0.5, width: 8% index: 14
+
+level 4, width: 40% index: 59
+
+
+всего индексов 64 
+
+*/
